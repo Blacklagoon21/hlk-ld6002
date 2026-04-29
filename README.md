@@ -14,7 +14,7 @@ Receives Heart Rate, Breath Rate, and Distance measurements over UART.
 |---|---|
 | Product | HI-LINK HLK-LD6002 |
 | Frequency | 57?64 GHz FMCW |
-| Power | 3.3 V (separate DCDC recommended: ¡Ã1 A, ripple ¡Â50 mV) |
+| Power | 3.3 V (separate DCDC recommended: Â¡Ãƒ1 A, ripple Â¡Ã‚50 mV) |
 | Communication | UART 115200 bps |
 | Measurements | Heart Rate (bpm), Breath Rate (bpm), Distance (cm) |
 
@@ -27,8 +27,8 @@ Receives Heart Rate, Breath Rate, and Distance measurements over UART.
 | 3V3 | 3.3V | Power supply (separate DCDC recommended) |
 | GND | GND | Common ground |
 | **P19** | **GND** | **Must be tied to GND** (must be LOW at power-on) |
-| TX0 | RX (e.g. GPIO4) | Sensor ¡æ MCU data |
-| RX0 | TX (e.g. GPIO5) | MCU ¡æ Sensor (optional) |
+| TX0 | RX (e.g. GPIO4) | Sensor Â¡Ã¦ MCU data |
+| RX0 | TX (e.g. GPIO5) | MCU Â¡Ã¦ Sensor (optional) |
 
 > **Warning:** If P19 is not connected to GND, the sensor will not transmit any data.
 
@@ -40,7 +40,7 @@ Receives Heart Rate, Breath Rate, and Distance measurements over UART.
 
 ```
 Byte   Field         Description
-¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
+Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¡
 [0]    Start         Fixed value 0x01
 [1-2]  Reserved      0x00 0x00 (always 0)
 [3-4]  DataLen       Payload length (Big-Endian, 4 or 8)
@@ -68,12 +68,12 @@ Place the component files in your project directory.
 
 ```
 your-project/
-¦§¦¡¦¡ your-device.yaml
-¦¦¦¡¦¡ external_components/
-    ¦¦¦¡¦¡ ld6002/
-        ¦§¦¡¦¡ __init__.py
-        ¦§¦¡¦¡ ld6002.h
-        ¦¦¦¡¦¡ ld6002.cpp
+â”œâ”€â”€ your-device.yaml
+â””â”€â”€ external_components/
+    â””â”€â”€ ld6002/
+        â”œâ”€â”€ __init__.py
+        â”œâ”€â”€ ld6002.h
+        â””â”€â”€ ld6002.cpp
 ```
 
 ### 2. Minimal Configuration
