@@ -40,7 +40,7 @@ Receives Heart Rate, Breath Rate, and Distance measurements over UART.
 
 ```
 Byte   Field         Description
-¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
+--------------------------------------------------------------
 [0]    Start         Fixed value 0x01
 [1-2]  Reserved      0x00 0x00 (always 0)
 [3-4]  DataLen       Payload length (Big-Endian, 4 or 8)
