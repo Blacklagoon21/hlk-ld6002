@@ -1,7 +1,7 @@
 > **Source code was written with vibe coding using Claude Sonnet 4.6.**  
 > **Tested on ESP32-C3.**
 
-# ESPHome External Component ? HLK-LD6002
+# ESPHome External Component  HLK-LD6002
 
 ESPHome external component for the HLK-LD6002 60 GHz FMCW radar sensor.  
 Receives Heart Rate, Breath Rate, and Distance measurements over UART.
@@ -133,4 +133,5 @@ All sensors support the full ESPHome [Sensor schema](https://esphome.io/componen
 
 ## References
 
-- HLK-LD6002 original library: [phuongnamzz/HLK-LD6002](https://github.com/phuongnamzz/HLK-LD6002)
+- HLK-LD6002 arduino library: [phuongnamzz/HLK-LD6002](https://github.com/phuongnamzz/HLK-LD6002)
+- HLK-LD6002 Documents: https://drive.google.com/drive/folders/1oMJYYOvhXx9uJD9SCkCsjMzLqdOg7AqR
